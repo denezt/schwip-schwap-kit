@@ -41,8 +41,9 @@ help_menu(){
 	printf "${gopen}Initialize Swapfile Wrapper${gclose}\n"
 	printf "${mopen}Set Action\t${copen}[ --action=EXEC_ACTION ]${cclose}\n"
 	printf "${mopen}Set Name\t${copen}[ --name=SWAP_NAME ]${cclose}\n"
-	printf "${yopen}Usage${yclose}\n"
-	printf "$(echo $0 | sed 's/^\.\///g') --action=create --name=swapfile1\n"
+	printf "\n${yopen}Usage:${yclose}\n"
+	printf "${gopen}# Ensure to add the leading '/'${gclose}\n"
+	printf "${mopen}$(echo $0 | sed 's/^\.\///g') ${copen}--action=create ${yopen}--name=/swapfile1${close}\n"
 	exit 0
 }
 
