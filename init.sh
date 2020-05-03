@@ -68,7 +68,3 @@ case $_action in
 	;;
 	*) output "No action was taken";;
 esac
-
-
-
-
